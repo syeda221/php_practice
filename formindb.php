@@ -1,0 +1,25 @@
+<?php
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submitting form in database
+    </title>
+</head>
+<body>
+    <form action="#" method="POST">
+       First name: <input type="text" name="fname" id=""><br>
+        last name:<input type="text" name="lname" id=""><br>
+<label for="gender">gender</label>
+       female<input type="radio" value="female" name="gender" id="">
+       male<input type="radio" value="male"name="gender" id="">
+      age: <input type="text" name="age" id="">
+      email<input type="email" name="email" id="">
+
+
+    </form>
+</body>
+</html>
