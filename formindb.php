@@ -15,8 +15,8 @@
         last name:<input type="text" name="lname" id=""><br>
 <label for="gender">gender</label>
        female<input type="radio" value="female" name="gender" id="">
-       male<input type="radio" value="male"name="gender" id="">
-      age: <input type="text" name="age" id="">
+       male<input type="radio" value="male"name="gender" id=""><br>
+      age: <input type="text" name="age" id=""><br>
       email<input type="email" name="email" id="">
 
 
