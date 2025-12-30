@@ -1,5 +1,6 @@
 <?php
-
+error_reporting(0);
+include "insertingdata.php"
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,6 +35,7 @@
         $message = $_POST["message"];
 
     }
+ 
     ?>
 </body>
 </html>
