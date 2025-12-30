@@ -1,5 +1,5 @@
 <?php
-$localhost ="localhost:3306";
+$localhost ="localhost";
 $username = "root";
 $password = "";
 $db = "mydb";
@@ -9,7 +9,7 @@ if(!$connection){
     die("connection failed" );
 }
 
-$sql = "INSERT INTO `student` VALUES($fname ,$lname ,$age ,$gender,$email,$message );";
+$sql = "INSERT INTO `student` VALUES('$fname' ,'$lname' ,'$age' ,'$gender','$email','$message' );";
 $sqlcon = mysqli_query($connection , $sql);
 
 if($sqlcon){

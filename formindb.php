@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-include "insertingdata.php"
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +33,7 @@ include "insertingdata.php"
         $age  = $_POST["age"];
         $email  = $_POST["email"];
         $message = $_POST["message"];
-
+        include "insertingdata.php";
     }
  
     ?>
