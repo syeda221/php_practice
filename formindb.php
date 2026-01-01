@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+// error_reporting(0);
 
 ?>
 <!DOCTYPE html>
@@ -11,7 +11,7 @@ error_reporting(0);
     </title>
 </head>
 <body>
-    <form action="#" method="POST">
+    <form  method="POST">
        First name: <input type="text" name="fname" id=""><br>
         last name:<input type="text" name="lname" id=""><br>
 <label for="gender">gender</label><br>
@@ -24,18 +24,20 @@ error_reporting(0);
     <input type="submit" value="submit">
 
     </form>
+    <?php 
+    include "formvalid.php";?>
+
 
     <?php 
-    if($_SERVER["REQUEST_METHOD"]== "POST"){
-        $fname = $_POST["fname"];
-        $lname = $_POST["lname"];
-        $gender = $_POST["gender"];
-        $age  = $_POST["age"];
-        $email  = $_POST["email"];
-        $message = $_POST["message"];
-        include "insertingdata.php";
-    }
- 
+    // if($_SERVER["REQUEST_METHOD"]== "POST"){
+    //     $fname = $_POST["fname"];
+    //     $lname = $_POST["lname"];
+    //     $gender = $_POST["gender"];
+    //     $age  = $_POST["age"];
+    //     $email  = $_POST["email"];
+    //     $message = $_POST["message"];
+    //     include "insertingdata.php";
+    // }
     ?>
 </body>
 </html>
