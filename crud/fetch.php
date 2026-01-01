@@ -5,10 +5,10 @@ $password = "";
 $db = "mydb";
 $conn = mysqli_connect($host,$name ,$password,$db);
 if(!$conn){
-    die("connection failed".sqli_connect_error());
+    die("connection failed".mysqli_connect_error());
 }
 
-$sql = "SELECT `first name`, `last name` , `email` , `gender` FROM student";
+$sql = "SELECT `first name`, `last name` , `email` , `gender` FROM `students`";
 $result = mysqli_query($conn,$sql);
 if(!$result){
     echo "error". mysqli_error($conn);
@@ -36,7 +36,7 @@ if(!$result){
     <table>
         <tr>
             <th>name </th>
-            <th>gender</th>
+            <th>gender</th> 
             <th>email</th>
         </tr>
      

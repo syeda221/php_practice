@@ -9,7 +9,7 @@ if(!$connection){
     die("connection failed");
 }
 
-$sql = "CREATE TABLE `student`(`first name` VARCHAR(20), `last name` VARCHAR(20), `gender` VARCHAR(10), `age` INT(3), `email` VARCHAR(30), `message` TEXT)";
+$sql = "CREATE TABLE `students`(`first name` VARCHAR(20), `last name` VARCHAR(20), `gender` VARCHAR(10), `age` INT(3), `email` VARCHAR(30), `message` TEXT)";
 $sqlcon = mysqli_query($connection , $sql);
 
 if($sqlcon){
