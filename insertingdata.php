@@ -9,7 +9,7 @@ if(!$connection){
     die("connection failed" );
 }
 
-$sql = "INSERT INTO `student` VALUES('$fname' ,'$lname' ,'$age' ,'$gender','$email','$message' );";
+$sql = "INSERT INTO `student` VALUES('$fname' ,'$lname' ,'$gender',,'$age','$email','$message' );";
 $sqlcon = mysqli_query($connection , $sql);
 
 if($sqlcon){
