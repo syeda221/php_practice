@@ -38,9 +38,14 @@ if(!$result){
             <th>name </th>
             <th>gender</th> 
             <th>email</th>
+            <th>update</th>
         </tr>
      
-        <?php while($row = mysqli_fetch_assoc($result)){ echo "<tr> <td>". $row['first name'] . " " . $row['last name'] . "</td><td>" . $row['gender'] . "</td><td>" . $row['email'] . "</td></tr>"; }?>
+        <?php while($row = mysqli_fetch_assoc($result)){ echo "<tr> <td>". $row['first name'] . " " . $row['last name'] . "</td><td>" . $row['gender'] . "</td><td>" . $row['email'] . "</td>"; ?> <td><a href="insert.php">update</a></td></tr><?php } ?>
+
+        <tr>
+            
+   
     </table>
 
    
