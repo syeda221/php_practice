@@ -8,4 +8,6 @@ echo '<br><br><br>';
 foreach ($arrayy as $arr => $value){
     var_dump($arr . " : ". $value . "<br>");
 }
-
+//constan in php
+define("SITE" , "postfolio website");
+echo  SITE ;
