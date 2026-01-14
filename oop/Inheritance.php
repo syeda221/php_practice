@@ -1,5 +1,5 @@
 <?php
-abstract class classone {
+ class classone {
     abstract function show($str);
 }
 class classtwo extends classone {
