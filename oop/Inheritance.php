@@ -1,8 +1,8 @@
 <?php
 class first {
-    function __contruct(){
-        echo "hellow";
+    function __construct(){
+        return "hellow";
     }
 }
-
+$obj1 = new first();
 ?>
